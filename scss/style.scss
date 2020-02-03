@@ -1,0 +1,88 @@
+@import"_variable.scss";
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+   
+  body{
+    background-image: url(img/wallpaper.jpg);
+  }
+
+   
+  header {
+    height: 110%;
+  }
+   
+  .homepage {
+    display: flex;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(81, 255, 66, 0.459),
+        rgba(16, 94, 0, 0.555)
+      ),
+      url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    margin-bottom: 0.75rem;
+    @include tablet {
+      font-size: 6rem;
+      letter-spacing: 1rem;
+    }
+    @include laptop {
+      font-size: 8rem;
+      letter-spacing: 1rem;
+    }
+  }
+  
+  .places {
+    display: flex;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(66, 242, 255, 0.459),
+        rgba(0, 6, 94, 0.555)
+      ),
+      url(img/main2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Lobster', cursive;
+    justify-content: center;
+    align-items: top;
+    font-size: 5rem;
+    margin-bottom: 0.75rem;
+    @include tablet {
+      font-size: 6rem;
+      letter-spacing: 1.8rem;
+    }
+    @include laptop {
+      font-size: 8rem;
+      letter-spacing: 1.3rem;
+    }
+  }
+
+  .culture {
+    display: flex;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(206, 221, 0, 0.459),
+        rgba(131, 122, 0, 0.555)
+      ),
+      url(img/culturebackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Lobster', cursive;
+    justify-content: center;
+    align-items: top;
+    font-size: 5rem;
+    margin-bottom: 0.75rem;
+    
+  }
