@@ -23,7 +23,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -48,22 +48,19 @@ header {
   }
 }
 
+.visit {
+  position: absolute;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .places {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 242, 255, 0.459)), to(rgba(0, 6, 94, 0.555))), url(img/main2.jpg);
   background-image: linear-gradient(to bottom, rgba(66, 242, 255, 0.459), rgba(0, 6, 94, 0.555)), url(img/main2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  font-family: 'Lobster', cursive;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  font-family: "Lobster", cursive;
   font-size: 5rem;
   margin-bottom: 0.75rem;
 }
@@ -82,16 +79,38 @@ header {
   }
 }
 
+.places .place-photos {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100vh;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.places .place-photos-cities {
+  height: 80vh;
+  width: 40vh;
+}
+
 .culture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 0, 0.459)), to(rgba(131, 122, 0, 0.555))), url(img/culturebackground.jpg);
-  background-image: linear-gradient(to bottom, rgba(206, 221, 0, 0.459), rgba(131, 122, 0, 0.555)), url(img/culturebackground.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 188, 221, 0.459)), to(rgba(0, 131, 44, 0.555))), url(img/culturebackground.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 188, 221, 0.459), rgba(0, 131, 44, 0.555)), url(img/culturebackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -100,13 +119,5 @@ header {
           align-items: top;
   font-size: 5rem;
   margin-bottom: 0.75rem;
-}
-
-.place-photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50vh;
-  width: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
