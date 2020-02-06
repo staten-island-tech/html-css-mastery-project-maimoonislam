@@ -20,6 +20,7 @@ header {
   display: flex;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 255, 66, 0.459)), to(rgba(16, 94, 0, 0.555))), url(img/main.jpg);
   background-image: linear-gradient(to bottom, rgba(81, 255, 66, 0.459), rgba(16, 94, 0, 0.555)), url(img/main.jpg);
+  border-radius: 10rem;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -48,15 +49,10 @@ header {
   }
 }
 
-.visit {
-  position: absolute;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .places {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 242, 255, 0.459)), to(rgba(0, 6, 94, 0.555))), url(img/main2.jpg);
   background-image: linear-gradient(to bottom, rgba(66, 242, 255, 0.459), rgba(0, 6, 94, 0.555)), url(img/main2.jpg);
+  border-radius: 10rem;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -65,25 +61,21 @@ header {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 900px) {
-  .places {
-    font-size: 6rem;
-    letter-spacing: 1.8rem;
-  }
-}
-
-@media (min-width: 1100px) {
-  .places {
-    font-size: 8rem;
-    letter-spacing: 1.3rem;
-  }
+.places .visit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .places .place-photos {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 100vh;
+  height: 80vh;
+  width: 100%;
   margin: 0 auto;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -97,8 +89,27 @@ header {
 }
 
 .places .place-photos-cities {
-  height: 80vh;
-  width: 40vh;
+  border-radius: 4rem;
+  height: 60vh;
+  width: 20%;
+}
+
+@media (min-width: 900px) {
+  .places {
+    font-size: 6rem;
+    letter-spacing: 1.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1100px) {
+  .places {
+    font-size: 8rem;
+    letter-spacing: 1.3rem;
+  }
 }
 
 .culture {

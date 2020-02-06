@@ -23,6 +23,7 @@ header {
       rgba(16, 94, 0, 0.555)
     ),
     url(img/main.jpg);
+  border-radius: 10rem;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -41,10 +42,6 @@ header {
   }
 }
 
-.visit{
-  position: absolute;
-  align-content: center;
-}
 .places {   
   background-image: linear-gradient(
       to bottom,
@@ -52,33 +49,46 @@ header {
       rgba(0, 6, 94, 0.555)
     ),
     url(img/main2.jpg);
+  border-radius: 10rem;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%; 
   font-family: "Lobster", cursive;
   font-size: 5rem;
   margin-bottom: 0.75rem;
-  @include tablet {
-    font-size: 6rem;
-    letter-spacing: 1.8rem;
-  }
-  @include laptop {
-    font-size: 8rem;
-    letter-spacing: 1.3rem;
+  .visit{
+    display: flex;
+    justify-content: center;
   }
   .place-photos {
     margin: 0;
     padding: 0;
     border: 0;
-    height: 100vh;
+    height: 80vh;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
     display: flex;
+
   }
   .place-photos-cities {
-    height: 80vh;
-    width: 40vh;
+    border-radius: 4rem;
+    height: 60vh;
+    width: 20%;
+  }
+  @include tablet {
+    font-size: 6rem;
+    letter-spacing: 1.8rem;
+    flex-direction: column;
+
+  }
+  @include laptop {
+    font-size: 8rem;
+    letter-spacing: 1.3rem;
+  }
+  @include phone {
+
   }
 }
 
