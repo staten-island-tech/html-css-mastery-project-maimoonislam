@@ -1,11 +1,11 @@
-$phone: 600px;
-$tablet: 900px;
+$phone: 350px;
+$tablet: 750px;
 $laptop: 1100px;
-$desktop: 1100px;
+$desktop: 1700px;
 @mixin phone {
-    @media (min-width: #{$phone}) {
-      @content;
-    }
+  @media (min-width: #{$phone}) {
+    @content;
+  }
 }
 @mixin tablet {
   @media (min-width: #{$tablet}) {

@@ -1,0 +1,17 @@
+.culture {
+  display: flex;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 188, 221, 0.459),
+      rgba(0, 131, 44, 0.555)
+    ),
+    url(img/culturebackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: "Lobster", cursive;
+  justify-content: center;
+  align-items: top;
+  font-size: 5rem;
+  margin-bottom: 0.75rem;
+}
