@@ -10,10 +10,13 @@
   background-size: cover;
   height: 100%;
   margin-bottom: 0.75rem;
-  
+
   .visit {
     display: flex;
     justify-content: center;
+    @include phone {
+      font-size: 5rem;
+    }
     @include desktop {
       font-size: 8rem;
     }
@@ -28,10 +31,19 @@
     justify-content: space-evenly;
     align-items: center;
     display: flex;
+    @include phone {
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
   .place-photos-cities {
     border-radius: 4rem;
     height: 60vh;
     width: 20%;
+    @include phone {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 2rem;
+    }
   }
 }

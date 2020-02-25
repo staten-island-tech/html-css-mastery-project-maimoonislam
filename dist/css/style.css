@@ -60,6 +60,12 @@ header {
           justify-content: center;
 }
 
+@media (min-width: 350px) {
+  .places .visit {
+    font-size: 5rem;
+  }
+}
+
 @media (min-width: 1700px) {
   .places .visit {
     font-size: 8rem;
@@ -84,10 +90,29 @@ header {
   display: flex;
 }
 
+@media (min-width: 350px) {
+  .places .place-photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .places .place-photos-cities {
   border-radius: 4rem;
   height: 60vh;
   width: 20%;
+}
+
+@media (min-width: 350px) {
+  .places .place-photos-cities {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+  }
 }
 
 .culture {
