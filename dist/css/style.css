@@ -101,6 +101,17 @@ header {
   }
 }
 
+@media (min-width: 1700px) {
+  .places .place-photos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .places .place-photos-cities {
   border-radius: 4rem;
   height: 60vh;
@@ -111,6 +122,14 @@ header {
   .places .place-photos-cities {
     height: 20rem;
     width: 20rem;
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .places .place-photos-cities {
+    height: 50rem;
+    width: 30rem;
     border-radius: 2rem;
   }
 }

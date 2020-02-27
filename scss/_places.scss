@@ -35,6 +35,10 @@
       flex-direction: column;
       justify-content: space-around;
     }
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
   .place-photos-cities {
     border-radius: 4rem;
@@ -43,6 +47,11 @@
     @include phone {
       height: 20rem;
       width: 20rem;
+      border-radius: 2rem;
+    }
+    @include desktop {
+      height: 50rem;
+      width: 30rem;
       border-radius: 2rem;
     }
   }
