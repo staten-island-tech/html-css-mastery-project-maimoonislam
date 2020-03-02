@@ -1,5 +1,4 @@
 .culture {
-  display: flex;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 188, 221, 0.459),
@@ -8,10 +7,51 @@
     url(img/culturebackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   font-family: "Lobster", cursive;
   justify-content: center;
   align-items: top;
   font-size: 5rem;
   margin-bottom: 0.75rem;
+}
+
+.culture-heading {
+  font-size: 4rem;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+}
+
+.culture-container {
+  height: 90vh;
+}
+
+.culture-images {
+  padding-top: 5rem;
+  display: flex;
+  height: 45vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.culture-images-images {
+  height: 40rem;
+  width: 25rem;
+}
+
+.culture-textbox {
+  height: 45vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.culture-textbox p {
+  font-size: 2rem;
+}
+
+.culture-textbox-textbox {
+  height: 40rem;
+  width: 25rem;
 }
